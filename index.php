@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>projeto PWII b</title>
    <link rel="stylesheet" href="bootstrap.min.css"></a>
+   <link href="bootstrap.min.css" rel="stylesheet" />
+
 </head>
 <body>
 
@@ -29,9 +31,18 @@
             <li><a class="dropdown-item" href="while.php">while</a></li>
             <li><a class="dropdown-item" href="for.php">for</a></li>
             <li><a class="dropdown-item" href="switch.php">switch</a></li>
-            <li><a class="dropdown-item" href="array/vetor.php">array/vetor</a></li>
+            <li><a class="dropdown-item" href="array_vetor.php">array/vetor</a></li>
           </ul>
       </ul>
     </div>
   </div>
 </nav>
+<div class = "containder">
+ 
+<h1>variavel</h1>
+  <h3>declaração de valores</h3>
+
+
+  <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
