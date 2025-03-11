@@ -4,41 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>projeto PWII b</title>
-   <link rel="stylesheet" href="bootstrap.min.css"></a>
-   <link href="bootstrap.min.css" rel="stylesheet" />
-
+    <title>Projeto PWII B</title>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <link href="estilo.css" rel="stylesheet" />
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
   <div class="container-fluid">
-  <img src="./img/sk.jpg" alt="Bootstrap" width="30" height="24">
-    <a class="navbar-brand" img="#" href=" #">Projeto PW 2 Turma B</a>
+    <a class="navbar-brand" href="#">
+      
+     <img src="/pwiib/imagens/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24" />
+      Projeto PW 2 Turma B
+  </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item dropdown">
+       
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            PHP
+            php
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="variavel.php">variavel</a></li>
-            <li><a class="dropdown-item" href="if.php">if</a></li>
-            <li><a class="dropdown-item" href="while.php">while</a></li>
-            <li><a class="dropdown-item" href="for.php">for</a></li>
-            <li><a class="dropdown-item" href="switch.php">switch</a></li>
-            <li><a class="dropdown-item" href="array_vetor.php">array/vetor</a></li>
+            <li><a class="dropdown-item" href="variavel.php">Variável</a></li>
+            <li><a class="dropdown-item" href="if.php">If</a></li>
+            <li><a class="dropdown-item" href="while.php">While</a></li>
+            <li><a class="dropdown-item" href="for.php">For</a></li>
+            <li><a class="dropdown-item" href="switch.php">Switch</a></li>
+            <li><a class="dropdown-item" href="array.php">Array/Vetor</a></li>
           </ul>
+        </li>
+       
       </ul>
+     
     </div>
   </div>
 </nav>
-<div class = "containder">
- 
-  <script src="bootstrap.bundle.min.js"></script>
+<h1>For</h1>
+<p>
+  For é uma estrutura de repetição. Existem 3 configurações para 
+  a estrutura de repetição funcionar:
+  <ol>
+    <li>Variável de controle</li>
+    <li>Condição de finalização</li>
+    <li>Incremento da variavel de controle</li>
+  </ol>
+  <pre>
+      for($i = 0; $i < 10; $i++){
+        echo "indice $i";
+      }
+  </pre>
+  <?php
+    for($i = 0; $i < 10; $i++){
+      echo "indice $i <br/>";
+    }
+  ?>
+</p>
+
+
+<script src="bootstrap.bundle.min.js"></script>
 </body>
 </html>

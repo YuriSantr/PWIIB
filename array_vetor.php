@@ -38,7 +38,63 @@
   </div>
 </nav>
 <div class = "containder">
- 
+ <?php
+ $frutas = ["bananas", "maça", "abacaxi", "mamao"];
+ echo "<br>$frutas[2]";
+for ($i= 0; $i < count($frutas); $i++)
+{
+  echo "<br>$frutas[$i]";
+}
+array_push ($frutas,"limao");
+echo "<br>$frutas[$i]";
+array_push ($frutas,rand(1,75));
+
+for ($i= 0; $i < count($frutas); $i++)
+{
+  echo "<br>$frutas[$i]";
+}
+
+?>
+
+<?php
+$b = array (rand(1,15), rand(1,15), rand(1,15), rand(1,15), rand(1,15));
+$j = array (rand(16,30),rand(16,30),rand(16,30),rand(16,30), rand(16,30));
+$n = array ( rand(31,50), rand(31,50), rand(31,50), rand(31,50), rand(31,50));
+$g = array (rand(51,70),rand(51,70), rand(51,70), rand(51,70), rand(51,70));
+$o = array (rand(71,90),rand(71,90),rand(71,90),rand(71,90),rand(71,90));
+
+?>
+
+<style>
+  table, tr, td{
+    border: 1px solid;
+    font-size:50px;
+    padding:20px;
+  }
+
+  </style>
+
+<table border = "5>
+  <tr>
+<td>b</td>
+<td>i</td>
+<td>n</td>
+<td>g</td>
+<td>o</td>
+</tr>
+<?php
+ for($ifor=0; $ifor < 5; $ifor++)
+echo "<tr>";
+echo "<td>$b[$ifor]</td>";  
+echo "<td>$j[$ifor]</td>";
+echo "<td>$n[$ifor]</td>";
+echo "<td>$g[$ifor]</td>";
+echo "<td>$o[$ifor]</td>";
+echo "</tr>";
+?>
+
+</table>
+
   <script src="bootstrap.bundle.min.js"></script>
 </body>
 </html>
