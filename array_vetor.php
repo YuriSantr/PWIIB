@@ -95,6 +95,14 @@ echo "</tr>";
 
 </table>
 
+<?php
+$Sorteio = array (12,7,3,9,5,2,4,1,11,8,13,6,14,15,10);
+
+for ($i=0; $i <15;  $i++ ){
+  echo "<h2>" .($i+1). "numero do sorteio é: $Sorteio[$i]</h2>";
+}
+?>
+
   <script src="bootstrap.bundle.min.js"></script>
 </body>
 </html>
