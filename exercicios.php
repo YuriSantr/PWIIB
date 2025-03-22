@@ -63,8 +63,33 @@
  Ao enviar o formulário com o método GET, 
  exiba o nome e a idade do usuário na página seguinte.
 
+
+ <form action="salvar_dados.php" method="get">
+    <label>idade</label>
+    <input type="text" name="idade1" value="" />
+    <br />
+    <label>nome</label>
+    <input type="text" name="nome1" value="" />
+    <br />
+    <button type="submit">
+        Logar
+    </button>
+</form>
+<br>
 2-Crie um formulário HTML que receba dois números e, 
 ao enviar com o método GET, exiba a soma desses dois números.
+
+<form action="salvar_dados.php" method="get">
+    <label>numero1</label>
+    <input type="number" name="num1" value="" />
+    <br />
+    <label>numero2</label>
+    <input type="number" name="num2" value="" />
+    <br />
+    <button type="submit">
+        somar
+    </button>
+</form>
 
 3-Crie um formulário HTML que peça o nome do usuário. 
 Quando o formulário for enviado com o método GET,
