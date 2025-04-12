@@ -43,6 +43,20 @@
   <h3>declaração de valores</h3>
 
 
+  <script>
+    function Piscar(botao)
+    {
+        if(botao.classList.contains('btn-success'))
+        {
+            botao.classList.remove('btn-success')
+            botao.classList.add('btn-danger')
+        }else{
+            botao.classList.remove('btn-danger')
+            botao.classList.add('btn-success')
+        }
+    }
+</script>
+
   <script src="bootstrap.bundle.min.js"></script>
 </body>
 </html>
