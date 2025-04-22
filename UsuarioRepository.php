@@ -28,3 +28,19 @@ class UsuarioRepository {
         return $resultado->fetch_assoc();
     }
 }
+
+//inclui o arquivo da classr repository do usuario
+require_once "usuarioRepository.php";
+
+
+//crio um objeto do tipo UsuarioRepository chamado repo 
+//e recebe a conexao como parametro
+$repo = new UsuarioRepository($conexao);
+
+
+//chamei o metodo BuscarTodos para puxar
+//todos usuarios do banco de dados
+$usuarios = $repo->buscarTodos();
+
+//foreach serve para ler todos os usuarios
+//vindos do banco em formato de array chave valor

@@ -33,8 +33,4 @@ if ($conexao->query($sql_insert)) {
 // Fechando a conexão
 $conexao->close();
 
-
-
-
-
 ?>
