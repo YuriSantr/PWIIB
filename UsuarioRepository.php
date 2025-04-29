@@ -17,7 +17,7 @@ class UsuarioRepository {
         }
         return $usuarios;
     }
-
+   
     public function buscarPorId($id) {
         $stmt = $this->conexao->prepare(
             "SELECT * FROM usuarios WHERE id = ?");
@@ -27,20 +27,14 @@ class UsuarioRepository {
         $resultado = $stmt->get_result();
         return $resultado->fetch_assoc();
     }
+    public function Inserir($login, $senha, $ativo)
+    {
+        echo $ativo;
+        
+        $sql = "INSERT INTO usuarios (LOGIN, SENHA, ATIVO) 
+                VALUES (?, ?, ?);";
+                $stmt = $this->conexao->prepare($sql);
+                $stmt->bind_param("ssi", $login,$senha,$ativo);
+                $stmt->execute();
+    }
 }
-
-//inclui o arquivo da classr repository do usuario
-require_once "usuarioRepository.php";
-
-
-//crio um objeto do tipo UsuarioRepository chamado repo 
-//e recebe a conexao como parametro
-$repo = new UsuarioRepository($conexao);
-
-
-//chamei o metodo BuscarTodos para puxar
-//todos usuarios do banco de dados
-$usuarios = $repo->buscarTodos();
-
-//foreach serve para ler todos os usuarios
-//vindos do banco em formato de array chave valor
