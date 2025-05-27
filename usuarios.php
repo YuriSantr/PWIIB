@@ -1,20 +1,17 @@
-<?php
+<?php 
+
     include "cabecalho.php"; 
     include "conexao.php";
     require_once 'UsuarioRepository.php';
 
-    //Crio um objeto do tipo UsuarioRepository chamado repo
-    //E recebe a conexão como parametro
     $repo = new UsuarioRepository($conexao);
 
     if( isset($_GET['busca']) && !empty($_GET['busca']) )
     {
-        $usuarios = $repo->Pesquisar( $_GET['busca'] )
+        $usuarios = $repo->Pesquisar( $_GET['busca'] );
     }
     else
     {
-        //Chamei o metodo BuscarTodos para puxar 
-        // todos usuarios do banco de dados
         $usuarios = $repo->buscarTodos();
     }
     
@@ -58,8 +55,6 @@
                     </thead>
                     <tbody>
                         <?php
-                            //foreach serve para ler todos os usuarios 
-                            // vindos do banco em formato de array chave valor
                             foreach ($usuarios as $user) {
                                 echo "<tr>
                                         <td>".$user['ID']."</td>
